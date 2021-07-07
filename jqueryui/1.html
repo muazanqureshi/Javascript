@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>Jquery UI Date Picker</h1>
+        <input id="dateinput" placeholder="Select Date">
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+
+    <script>
+        $('#dateinput').datepicker({
+            numberOfMonths:1,
+            changeYear : true,
+            changeMonth : true,
+            showWeek: true,
+            showOtherMonths:true,
+            minDate: new Date(2020,0,1),
+            maxDate : new Date(2022,0,1)
+        });
+    </script>
+</body>
+
+</html>

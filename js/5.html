@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <img onmouseover="setNewImage()" onmouseout="setOldImage()" src="img/1.jpg" alt="Image 1" width="500px" id="img"> -->
+    <div onclick="setClick()" ondblclick="setdbClick()" onmouseover="setNewImage()" onmouseout="setOldImage()" style="width: 500px; height: 500px; background-color: aquamarine;" id="img"></div>
+
+</body>
+</html>
+
+<script>
+
+function setNewImage(){
+    // alert("Hello");
+    // document.getElementById("img").src = 'img/2.jpg';
+    document.getElementById("img").style.background = 'orange';
+}
+
+function setOldImage(){
+    // alert("World");
+    // document.getElementById("img").src = 'img/1.jpg';
+    document.getElementById("img").style.background = 'pink';
+
+}
+
+function setClick(){
+    // alert("Hello");
+    // document.getElementById("img").src = 'img/2.jpg';
+    document.getElementById("img").style.background = 'dodgerblue';
+}
+
+function setdbClick(){
+    // alert("Hello");
+    // document.getElementById("img").src = 'img/2.jpg';
+    document.getElementById("img").style.background = 'crimson';
+}
+
+</script>

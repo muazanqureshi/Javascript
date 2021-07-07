@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="city" id="city1" value="Karachi">Karachi
+    <br>
+    <input type="radio" name="city" id="city1" value="Islamabad">Islamabad
+    <br>
+    <input type="radio" name="city" id="city1" value="Peshawar">Peshawar
+    <br>
+    <input type="radio" name="city" id="city1" value="Lahore">Lahore
+    <br>
+    <button onclick="show()">
+        Click Me
+    </button>
+    <h1 id="output"></h1>
+</body>
+
+</html>
+
+<script>
+    function show() {
+        var city1 = document.getElementById("city1");
+        var city2 = document.getElementById("city2");
+        var city3 = document.getElementById("city3");
+        var city4 = document.getElementById("city4");
+
+
+        if (city1.checked == true)
+            alert("the selected city is " + city1.value);
+
+        else if (city2.checked == true)
+
+            alert("the selected city is " + city2.value);
+
+        else if (city3.checked == true)
+
+            alert("the selected city is " + city.value);
+
+        else if (city4.checked == true)
+
+            alert("the selected city is " + city4.value);
+
+        else
+
+            alert("No channel is selected");
+
+    }
+</script>

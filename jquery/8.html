@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaning in Jquery</title>
+    <style>
+        #cube {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            opacity: 1;
+            position: absolute;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="animate">
+        Animate
+    </button>
+
+    <div id="cube">
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#animate").click(function () {
+                $("#cube").slideUp(1000).slideDown(500).fadeOut(1000).fadeIn(500).toggle(500);
+            })
+
+
+        });
+
+    </script>
+</body>
+
+</html>

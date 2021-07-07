@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cube {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            opacity: .5;
+            position: absolute;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="animate">
+        Animate
+    </button>
+
+    <div id="cube">
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#animate").click(function () {
+                $("#cube").animate(
+                    {
+                        width: '200px',
+                        height: '200px',
+                        background: 'pink',
+                        opacity: '1',
+                        left: '500px',
+                        // backgroundColor: '[224, 255, 255]'
+                    },
+                    'slow');
+            })
+
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <style>
+        #mydiv{
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            border: 5px dashed crimson;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mydiv" title="">
+        
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+
+    <script>
+        $('#mydiv').tooltip({
+            track:true,
+            content: 'This is Pink Colored Div Element',
+            // show:{effect:'bounce', duration:2000},
+            // show:{effect:'pulsate', duration:2000},
+            // show:{effect:'highlight', duration:2000},
+            // show:{effect:'explode', duration:2000},
+            show:{effect:'blind', duration:2000},
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaning in Jquery</title>
+    <style>
+        #cube {
+            padding: 20px;
+            background-color: pink;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="animate">
+        Click Me
+    </button>
+
+    <div id="cube">
+        <p id="paragraph" class="firstParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint hic dolores ex sequi ea. Officiis
+            facilis voluptatem earum rerum! Totam, sequi? Sequi id iusto eum accusantium unde, voluptates velit.
+        </p>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            // $("#animate").click(function () {
+            //     alert($("#paragraph").text());
+            // })
+
+            // $("#animate").click(function () {
+            //     $("#paragraph").text("Hello World");
+            // })
+
+            // $("#animate").click(function () {
+            //     alert($("#cube").html());
+            // })
+
+
+            // $("#animate").click(function () {
+            //     alert($("#cube").parent().html());
+            // })
+
+            // $("#animate").click(function () {
+            //     alert($("#cube").children().attr("class"));
+            // })
+
+            $("#animate").click(function () {
+                alert($("#cube").css("font"));
+            })
+        });
+
+    </script>
+</body>
+
+</html>

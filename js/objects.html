@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    // var Car = {
+    //     car_brand = "Tesla",
+    //     car_model = "Abc 2021",
+    //     car_price = 2500000,
+
+    //     teslaAutoPilot: function () {
+    //         document.write('<h2> this car has auto pilot </h2>');
+    //     }
+
+    // }
+
+    // Car.teslaAutoPilot();
+    // document.write(Car.teslaAutoPilot());
+
+    //constructor 
+
+    function Cars(car_brand, car_model, car_price) {
+        this.car_brand = "Tesla";
+        this.car_model = "Abc 2021";
+        this.car_price = 2500000;
+        this.AutoPilot = function () {
+            document.write("This Car has Auto Pilot");
+        }
+    }
+
+    var c1 = new Cars("Tesla", "Model 2021", 350000);
+    c1.AutoPilot();
+    document.writeln("<h1>" + c1.car_brand + "</h1>");
+
+</script>

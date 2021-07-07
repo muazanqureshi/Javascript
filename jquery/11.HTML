@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaning in Jquery</title>
+    <style>
+        #cube {
+            padding: 20px;
+            background-color: pink;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="append">
+        Append
+    </button>
+
+
+    <button id="prepend">
+        Prepend
+    </button>
+
+
+    <button id="after">
+        After
+    </button>
+
+
+    <button id="before">
+        Before
+    </button>
+
+
+    <button id="remove">
+        Remove
+    </button>
+
+
+    <button id="empty">
+        Empty
+    </button>
+
+    <div id="cube">
+        <p id="paragraph" class="firstParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint hic dolores ex sequi ea. Officiis
+            facilis voluptatem earum rerum! Totam, sequi? Sequi id iusto eum accusantium unde, voluptates velit.
+        </p>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#append").click(function () {
+                $("#cube").append('<li>This is a list item append in the this div</li>');
+            })
+
+            $("#after").click(function () {
+                $("#cube").after('<li>This is a list item append in the this div</li>');
+            })
+
+            $("#before").click(function () {
+                $("#cube").before('<li>This is a list item append in the this div</li>');
+            })
+
+            $("#prepend").click(function () {
+                $("#cube").prepend('<li>This is a list item append in the this div</li>');
+            })
+
+            $("#remove").click(function () {
+                $("#cube").remove();
+            })
+
+            $("#empty").click(function () {
+                $("#cube").empty();
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>
